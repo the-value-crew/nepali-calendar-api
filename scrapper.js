@@ -5,8 +5,17 @@ const { JSDOM } = require("jsdom");
 const DAYS = ["आईतवार", "सोमवार", "मंगलवार", "बुधवार", "बिहीवार", "शुक्रवार", "शनिवार"];
 
 const _fetchData = async (year, month) => {
+
+
+
+
     try {
         console.log("fetching", year, month);
+        if (fs.existsSync(`./data/${year}/${month}.json`)) {
+            console.log("returned");
+            return;
+        }
+
         const { data } = await axios({
             method: 'post',
             url: 'https://nepalicalendar.rat32.com/index_nep.php',
