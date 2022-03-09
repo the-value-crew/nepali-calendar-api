@@ -5,10 +5,6 @@ const { JSDOM } = require("jsdom");
 const DAYS = ["आईतवार", "सोमवार", "मंगलवार", "बुधवार", "बिहीवार", "शुक्रवार", "शनिवार"];
 
 const _fetchData = async (year, month) => {
-
-
-
-
     try {
         console.log("fetching", year, month);
         if (fs.existsSync(`./data/${year}/${month}.json`)) {
@@ -76,6 +72,5 @@ const scrapeData = async (year, month) => {
     await _fetchData(year, month);
     console.log("Data fetch completed");
 }
-
 
 module.exports = { scrapeData };

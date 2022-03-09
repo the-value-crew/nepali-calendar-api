@@ -1,0 +1,7 @@
+{
+    "name": "Nepali Calendar APIs",
+    "brief": "Contains information on Nepali date, tithi, festivals, holidays and monthly dates for marriage and bratabandha.",
+    "source": "https://nepalicalendar.rat32.com/",
+    "from": "1992 BS",
+    "to": "2080 BS"
+}
