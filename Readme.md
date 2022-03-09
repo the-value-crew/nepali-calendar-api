@@ -20,36 +20,12 @@ Objective of this repository is to provide data to anyone looking to implement n
     },
     "days": [
         {
-            "n": "",
-            "e": "",
-            "t": "",
-            "f": "",
-            "h": false,
-            "d": 1
-        },
-        {
-            "n": "",
-            "e": "",
-            "t": "",
-            "f": "",
-            "h": false,
-            "d": 2
-        },
-        {
-            "n": "",
-            "e": "",
-            "t": "",
-            "f": "",
-            "h": false,
-            "d": 3
-        },
-        {
-            "n": "१",
-            "e": "15",
-            "t": "एकादशी",
-            "f": "मोहिनी एकादशी व्रत",
-            "h": false,
-            "d": 4
+            "n": "१", // nepali date
+            "e": "15", // english date
+            "t": "एकादशी", // tithi
+            "f": "मोहिनी एकादशी व्रत", // festival
+            "h": false, // holiday
+            "d": 4 // day: 1->sunday, 2-> monday ...
         },
         {
             "n": "२",
@@ -68,6 +44,8 @@ Objective of this repository is to provide data to anyone looking to implement n
             "d": 6
         }
     ],
+    
+    // holiday and festivals
     "holiFest": [
         "१ गते मोहिनी एकादशी व्रत",
         "४ गते चण्डी पुर्णिमा, किराँत, राई, लिम्बु जातिको उर्भ्यौली पर्व, गौतम बुद्ध जयन्ती",
@@ -87,7 +65,7 @@ Objective of this repository is to provide data to anyone looking to implement n
 ```
 
 ## Scrape data yourself
-Currently available data was scrapped from 
+Currently available data was scrapped from nepalicalendar.rat32.com. Run the file scrapper_v1 to get the data yourself. As the source website chanegs or new sources are added new version of scrapper will be needed.
 
 ## to dos
 - [ ] New data sources for more refined data
